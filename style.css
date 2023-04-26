@@ -6,7 +6,7 @@
   --fs-100: 1rem;
   --fs-200: 1.125rem;
   --fs-300: 1.5625rem;
-  --fs-400: 3.125rem;
+  --fs-400: 6rem;
 
   --fw-500: 500;
   --fw-700: 700;
@@ -77,6 +77,10 @@ svg {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 /* utility classes */
 
 .clr-neutral-100 {
@@ -121,4 +125,75 @@ svg {
 
 .fw-700 {
   font-weight: var(--fw-700);
+}
+
+.even-columns {
+  display: grid;
+  grid-template-areas: "article aside";
+  grid-auto-columns: 1fr;
+}
+
+button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 12px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* general styling */
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+header {
+  padding: 1.5rem 0;
+}
+
+header,
+ul,
+.reg {
+  gap: 2.5rem;
+}
+
+nav {
+  gap: 4rem;
+}
+
+h1 {
+  line-height: 0.9;
+}
+
+article {
+  max-width: 1200px;
+  /* height: 80vh; */
+  margin: auto;
+  align-items: flex-end;
+  justify-items: end;
+  padding: 3rem 0;
+}
+
+:where(.main :not(:first-child)) {
+  margin-top: 3rem;
+}
+
+.main p {
+  max-width: 40ch;
+}
+
+footer {
+  margin-top: 6.5rem;
+}
+
+.img1 img {
+  max-height: 73vh;
+}
+
+.img2 {
+  display: none;
 }
