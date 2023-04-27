@@ -6,7 +6,7 @@
   --fs-100: 1rem;
   --fs-200: 1.125rem;
   --fs-300: 1.5625rem;
-  --fs-400: 6rem;
+  --fs-400: 5.3rem;
 
   --fw-500: 500;
   --fw-700: 700;
@@ -133,6 +133,15 @@ a {
   grid-auto-columns: 1fr;
 }
 
+.btn {
+  border: 2px solid var(--clr-neutral-200);
+  background-color: var(--clr-neutral-100);
+}
+
+.btn:hover {
+  border: 2px solid var(--clr-neutral-300);
+}
+
 button {
   padding: 0.5rem 1.5rem;
   border-radius: 12px;
@@ -196,4 +205,15 @@ footer {
 
 .img2 {
   display: none;
+}
+
+a:hover,
+button:hover {
+  color: var(--clr-neutral-300);
+  background-color: var(--clr-neutral-100);
+}
+
+ul li:hover {
+  color: var(--clr-neutral-300);
+  cursor: pointer;
 }
