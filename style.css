@@ -6,7 +6,7 @@
   --fs-100: 1rem;
   --fs-200: 1.125rem;
   --fs-300: 1.5625rem;
-  --fs-400: 5.3rem;
+  --fs-400: 5rem;
 
   --fw-500: 500;
   --fw-700: 700;
@@ -79,6 +79,7 @@ svg {
 
 a {
   text-decoration: none;
+  color: var(--clr-neutral-200);
 }
 
 /* utility classes */
@@ -133,6 +134,17 @@ a {
   grid-auto-columns: 1fr;
 }
 
+button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-neutral-300);
+}
+
 .btn {
   border: 2px solid var(--clr-neutral-200);
   background-color: var(--clr-neutral-100);
@@ -142,11 +154,6 @@ a {
   border: 2px solid var(--clr-neutral-300);
 }
 
-button {
-  padding: 0.5rem 1.5rem;
-  border-radius: 12px;
-}
-
 .flex {
   display: flex;
   justify-content: space-between;
@@ -154,6 +161,10 @@ button {
 }
 
 /* general styling */
+
+body {
+  background-color: var(--clr-neutral-100);
+}
 
 .container {
   max-width: 1440px;
@@ -174,6 +185,62 @@ nav {
   gap: 4rem;
 }
 
+.hidden {
+  display: none;
+  position: absolute;
+  top: 3.2rem;
+  padding: 1rem 1.3rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 1.5rem hsl(0, 0%, 86%);
+}
+
+.hidden li a {
+  /* line-height: 0; */
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.2rem 0;
+}
+
+.drop-down:hover .hidden {
+  display: block;
+}
+
+.features {
+  right: 0;
+  width: 10.1rem;
+}
+
+.company {
+  left: 0;
+  width: 7.5rem;
+}
+
+a:hover,
+button:hover {
+  color: var(--clr-neutral-300);
+}
+
+ul li {
+  position: relative;
+  gap: 0.5rem;
+}
+
+ul li:hover {
+  color: var(--clr-neutral-300);
+  cursor: pointer;
+}
+
+.nav-list {
+  padding: 1rem 0;
+}
+
+.nav-list:hover > img:first-of-type {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+
 h1 {
   line-height: 0.9;
 }
@@ -184,11 +251,11 @@ article {
   margin: auto;
   align-items: flex-end;
   justify-items: end;
-  padding: 3rem 0;
+  padding: 2rem 0 3rem 0;
 }
 
 :where(.main :not(:first-child)) {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .main p {
@@ -196,7 +263,7 @@ article {
 }
 
 footer {
-  margin-top: 6.5rem;
+  margin-top: 5.8rem;
 }
 
 .img1 img {
@@ -207,13 +274,11 @@ footer {
   display: none;
 }
 
-a:hover,
-button:hover {
-  color: var(--clr-neutral-300);
-  background-color: var(--clr-neutral-100);
-}
-
-ul li:hover {
-  color: var(--clr-neutral-300);
-  cursor: pointer;
+@media (max-width="23.4375rem") {
+  .even-columns {
+    grid-template-areas:
+      "aside"
+      "article";
+    /* grid-auto-columns: 1fr; */
+  }
 }
