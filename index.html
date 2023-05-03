@@ -38,11 +38,11 @@
     <main>
       <div class="container">
         <header class="fs-100 clr-neutral-200 flex">
-          <nav class="flex">
-            <div class="logo">
-              <a href="#"><img src="images/logo.svg" alt="logo" /></a>
-            </div>
+          <div class="logo">
+            <a href="#"><img src="images/logo.svg" alt="logo" /></a>
+          </div>
 
+          <nav class="flex">
             <ul class="primary-nav flex" role="list">
               <li class="drop-down nav-list flex">
                 Features <img src="images/icon-arrow-down.svg" alt="" />
@@ -94,18 +94,79 @@
               alt=""
               aria-controls="true"
             />
-            <img
-              class="icon-close"
-              src="images/icon-close-menu.svg"
-              alt=""
-              aria-controls="true"
-            />
             <span class="visually-hidden">Menu</span>
           </button>
 
           <div class="reg flex">
             <a href="#" class="clr-neutral-200">Login</a>
             <button class="btn clr-neutral-200">Register</button>
+          </div>
+
+          <div class="side-nav">
+            <button
+              class="mobile-nav-toggle"
+              aria-control="primary-nav"
+              aria-expanded="false"
+            >
+              <img
+                class="icon-close"
+                src="images/icon-close-menu.svg"
+                alt=""
+                aria-controls="true"
+              />
+              <span class="visually-hidden">Menu</span>
+            </button>
+            <nav class="flex">
+              <ul class="mobile-primary-nav column-flex" role="list">
+                <li class="drop-down side-nav-list column-flex">
+                  <div class="mobile-drop-down flex">
+                    Features <img src="images/icon-arrow-down.svg" alt="" />
+                  </div>
+                  <ul class="mobile-features" role="list">
+                    <li>
+                      <a href=""
+                        ><img src="images/icon-todo.svg" alt="" /> Todo List</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img src="images/icon-calendar.svg" alt="" />
+                        Calender</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img src="images/icon-reminders.svg" alt="" />
+                        Reminders</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img src="images/icon-planning.svg" alt="" />
+                        Planning</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="drop-down side-nav-list column-flex">
+                  <div class="mobile-drop-down flex">
+                    Company <img src="images/icon-arrow-down.svg" alt="" />
+                  </div>
+                  <ul class="mobile-company" role="list">
+                    <li><a href="">History</a></li>
+                    <li><a href="">Our Team</a></li>
+                    <li><a href="">Blog</a></li>
+                  </ul>
+                </li>
+                <li class="side-nav-list"><a href="">Careers</a></li>
+                <li class="side-nav-list"><a href="">About</a></li>
+              </ul>
+            </nav>
+
+            <div class="side-reg column-flex">
+              <a href="#" class="clr-neutral-200">Login</a>
+              <button class="btn clr-neutral-200">Register</button>
+            </div>
           </div>
         </header>
 
