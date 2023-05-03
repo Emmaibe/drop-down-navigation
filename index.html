@@ -42,6 +42,7 @@
             <div class="logo">
               <a href="#"><img src="images/logo.svg" alt="logo" /></a>
             </div>
+
             <ul class="primary-nav flex" role="list">
               <li class="drop-down nav-list flex">
                 Features <img src="images/icon-arrow-down.svg" alt="" />
@@ -81,6 +82,27 @@
               <li class="nav-list"><a href="">About</a></li>
             </ul>
           </nav>
+
+          <button
+            class="mobile-nav-toggle"
+            aria-control="primary-nav"
+            aria-expanded="false"
+          >
+            <img
+              class="icon-hamburger"
+              src="images/icon-menu.svg"
+              alt=""
+              aria-controls="true"
+            />
+            <img
+              class="icon-close"
+              src="images/icon-close-menu.svg"
+              alt=""
+              aria-controls="true"
+            />
+            <span class="visually-hidden">Menu</span>
+          </button>
+
           <div class="reg flex">
             <a href="#" class="clr-neutral-200">Login</a>
             <button class="btn clr-neutral-200">Register</button>
@@ -88,11 +110,15 @@
         </header>
 
         <article class="even-columns">
+          <div class="img2">
+            <img src="images/image-hero-mobile.png" alt="image-hero-mobile" />
+          </div>
+
           <section>
             <div class="main">
               <h1 class="clr-neutral-300 fs-400 fw-700">
-                Make <br />
-                remote work
+                Make
+                <span>remote work</span>
               </h1>
               <p class="clr-neutral-200 fs-200">
                 Get your team in sync, no matter your location. Streamline
@@ -128,12 +154,6 @@
                 <img
                   src="images/image-hero-desktop.png"
                   alt="image-hero-desktop"
-                />
-              </div>
-              <div class="img2">
-                <img
-                  src="images/image-hero-mobile.png"
-                  alt="image-hero-mobile"
                 />
               </div>
             </figure>
