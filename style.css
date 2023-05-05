@@ -236,6 +236,11 @@ nav {
   background-color: var(--clr-neutral-100);
 }
 
+.side-nav[visible] {
+  display: block;
+  transform: translateX(-100%);
+}
+
 .side-nav .mobile-nav-toggle {
   margin-left: auto;
 }
