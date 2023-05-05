@@ -224,15 +224,15 @@ nav {
 }
 
 .side-nav {
-  /* display: grid; */
+  display: none;
   gap: 2rem;
   width: 14.5rem;
   position: absolute;
   top: 0rem;
-  left: 65%;
+  left: 100%;
   bottom: 0;
   /* max-height: 150vh; */
-  /* overflow: hidden; */
+  overflow: hidden;
   background-color: var(--clr-neutral-100);
 }
 
@@ -242,7 +242,7 @@ nav {
 
 .side-reg {
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .side-reg button {
@@ -291,7 +291,8 @@ nav {
   width: 10.1rem;
 }
 
-.mobile-features {
+.mobile-features,
+.mobile-company {
   padding-left: 1rem;
   display: none;
 }
@@ -300,7 +301,12 @@ nav {
   display: block;
 }
 
-.rt-img[rotate] {
+.r1[rotate] {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+
+.r2[rotate] {
   transform: rotate(180deg);
   transition: 0.3s;
 }
@@ -312,6 +318,10 @@ nav {
 
 .mobile-company {
   padding-left: 1rem;
+}
+
+.mobile-company[visible] {
+  display: block;
 }
 
 a:hover,
