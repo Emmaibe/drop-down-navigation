@@ -204,7 +204,7 @@ body {
 }
 
 header {
-  position: relative;
+  /* position: relative; */
   padding: 1.5rem 0;
 }
 
@@ -229,8 +229,10 @@ nav {
   width: 14.5rem;
   position: absolute;
   top: 0rem;
-  left: 60%;
-  height: 100vh;
+  left: 65%;
+  bottom: 0;
+  /* max-height: 150vh; */
+  /* overflow: hidden; */
   background-color: var(--clr-neutral-100);
 }
 
@@ -240,6 +242,12 @@ nav {
 
 .side-reg {
   align-items: center;
+  margin-top: 2rem;
+}
+
+.side-reg button {
+  margin-top: 0.5rem;
+  padding-inline: 3.7rem;
 }
 
 .mobile-nav-toggle {
@@ -285,6 +293,16 @@ nav {
 
 .mobile-features {
   padding-left: 1rem;
+  display: none;
+}
+
+.mobile-features[visible] {
+  display: block;
+}
+
+.rt-img[rotate] {
+  transform: rotate(180deg);
+  transition: 0.3s;
 }
 
 .company {
@@ -315,8 +333,7 @@ ul li:hover {
   padding: 1rem 0;
 }
 
-.nav-list:hover > img:first-of-type,
-.mobile-drop-down:hover > img:first-of-type {
+.nav-list:hover > img:first-of-type {
   transform: rotate(180deg);
   transition: 0.3s;
 }
